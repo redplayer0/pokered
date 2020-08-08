@@ -17,7 +17,7 @@ ViridianForest_Object:
 	sign 18, 45, 13 ; ViridianForestText13
 	sign 2, 1, 14 ; ViridianForestText14
 
-	db 8 ; objects
+	db 9 ; objects
 	object SPRITE_YOUNGSTER, 16, 43, STAY, NONE, 1 ; person
 	object SPRITE_YOUNGSTER, 30, 33, STAY, LEFT, 2, OPP_BUG_CATCHER, 1
 	object SPRITE_YOUNGSTER, 30, 19, STAY, LEFT, 3, OPP_BUG_CATCHER, 2
@@ -26,6 +26,7 @@ ViridianForest_Object:
 	object SPRITE_POKE_BALL, 12, 29, STAY, NONE, 6, POTION
 	object SPRITE_POKE_BALL, 1, 31, STAY, NONE, 7, POKE_BALL
 	object SPRITE_YOUNGSTER, 27, 40, STAY, NONE, 8 ; person
+	object SPRITE_YOUNGSTER, 32, 19, STAY, DOWN, 15, OPP_BUG_CATCHER, 12
 
 	; warp-to
 	warp_to 1, 0, VIRIDIAN_FOREST_WIDTH ; VIRIDIAN_FOREST_NORTH_GATE

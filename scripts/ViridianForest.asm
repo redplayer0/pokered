@@ -27,6 +27,7 @@ ViridianForest_TextPointers:
 	dw ViridianForestText12
 	dw ViridianForestText13
 	dw ViridianForestText14
+	dw ViridianForestText15
 
 ViridianForestTrainerHeader0:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0, 4, ViridianForestBattleText1, ViridianForestEndBattleText1, ViridianForestAfterBattleText1
@@ -34,6 +35,8 @@ ViridianForestTrainerHeader1:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1, 4, ViridianForestBattleText2, ViridianForestEndBattleText2, ViridianForestAfterBattleText2
 ViridianForestTrainerHeader2:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2, 1, ViridianForestBattleText3, ViridianForestEndBattleText3, ViridianForestAfterBattleText3
+ViridianForestTrainerHeader3:
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAIBER_3, 1, ViridianForestBattleText1, ViridianForestEndBattleText1, ViridianForestAfterBattleText1
 	db -1 ; end
 
 ViridianForestText1:
@@ -121,3 +124,9 @@ ViridianForestText13:
 ViridianForestText14:
 	text_far _ViridianForestText14
 	text_end
+
+ViridianForestText15:
+    text_asm
+    ld hl, ViridianForestTrainerHeader3
+    call TalkToTrainer
+    jp TextScriptEnd
