@@ -17,7 +17,7 @@ ViridianForest_TextPointers:
 	dw ViridianForestText2
 	dw ViridianForestText3
 	dw ViridianForestText4
-	dw PickUpItemText
+	dw ViridianForestText15
 	dw PickUpItemText
 	dw PickUpItemText
 	dw ViridianForestText8
@@ -27,7 +27,6 @@ ViridianForest_TextPointers:
 	dw ViridianForestText12
 	dw ViridianForestText13
 	dw ViridianForestText14
-	dw ViridianForestText15
 
 ViridianForestTrainerHeader0:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0, 4, ViridianForestBattleText1, ViridianForestEndBattleText1, ViridianForestAfterBattleText1
